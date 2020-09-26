@@ -13,5 +13,6 @@ class NewWordsActivity : AppCompatActivity() {
         val sharedPref = getSharedPreferences("Adding Words and meanings", Context.MODE_PRIVATE)
         newWordToLearnTxt.text = sharedPref.getString("NEWWORD", "")
         newMeaningToLearnTxt.text =sharedPref.getString("NEWMEANING", "")
+        
     }
 }
